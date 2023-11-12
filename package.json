@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "gh-pages": "^6.0.0",
+    "node": "^21.1.0"
+  }
+}
