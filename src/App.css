@@ -1,38 +1,109 @@
+/* Your existing styles */
+
 .App {
+  display: flex;
+  flex-direction: column; /* Adjusting layout to a column */
+  align-items: center; /* Centering content horizontally */
+  padding: 20px;
+}
+.loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #3498db;
+  padding: 10px 0;
+  color: white;
+  font-size: 18px;
+  z-index: 1000;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  padding: 40px 20px 20px 20px; /* Added more padding to the top */
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto; /* Centering the logo horizontally */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 1200px; /* Optional: Set a maximum width for content */
 }
+
+.left-content {
+  width: 48%; /* Adjust width for the left content */
+}
+
+.right-content {
+  width: 48%; /* Adjust width for the right content */
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.file-uploader {
+  display: block;
+  margin: 0 auto;
+}
+.text-editor,
+.styled-button {
+  margin-bottom: 10px;
+}
+
+.styled-button {
+  background-color: #3498db; /* Blue color */
+  color: #fff; /* Text color */
+  padding: 10px 20px; /* Padding for the button */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+  background-color: #2980b9; /* Darker shade on hover */
+}
+
+.answer-section {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.history-container {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+}
+.history-item {
+  margin-bottom: 10px;
+}
+
+.question {
+  font-weight: bold; /* Adding bold font for the question */
+}
+
+.answer {
+  /* Your existing styles for the answer */
+}
+
+/* ... (other styles remain unchanged) */
